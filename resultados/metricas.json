@@ -1,0 +1,24 @@
+{
+  "modelo": "Regresión logística con pesos balanceados",
+  "semilla": 42,
+  "umbral": 0.5,
+  "filas_entrenamiento": 111482,
+  "filas_prueba": 27871,
+  "accuracy": 0.6663198306483441,
+  "balanced_accuracy": 0.5757860764494638,
+  "precision": 0.3566649511065363,
+  "recall": 0.3919683257918552,
+  "f1": 0.3734842360549717,
+  "roc_auc": 0.6014348932107987,
+  "matriz_confusion": [
+    [
+      15799,
+      5000
+    ],
+    [
+      4300,
+      2772
+    ]
+  ],
+  "accuracy_base_clase_mayoritaria": 0.7462595529403322
+}

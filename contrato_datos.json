@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "descripcion": "Contrato de entrada para inferencia académica de incumplimiento crediticio",
+  "campos": {
+    "loan_amount": {"tipo": "number", "min": 1, "max": 10000000},
+    "income": {"tipo": "number", "min": 0, "max": 1000000},
+    "Credit_Score": {"tipo": "integer", "min": 300, "max": 900},
+    "term": {"tipo": "integer", "min": 1, "max": 480},
+    "loan_type": {"tipo": "string", "permitidos": ["type1", "type2", "type3"]},
+    "loan_purpose": {"tipo": "string", "permitidos": ["p1", "p2", "p3", "p4"]},
+    "occupancy_type": {"tipo": "string", "permitidos": ["pr", "sr", "ir"]}
+  },
+  "politica": {"todos_obligatorios": true, "acepta_nulos": false, "acepta_campos_adicionales": false},
+  "objetivo_entrenamiento": {"nombre": "Status", "tipo": "integer", "permitidos": [0, 1], "no_incluir_en_inferencia": true},
+  "ejemplo_valido": {"loan_amount": 250000, "income": 6000, "Credit_Score": 710, "term": 360, "loan_type": "type1", "loan_purpose": "p1", "occupancy_type": "pr"},
+  "ejemplo_invalido": {"loan_amount": -500, "income": null, "Credit_Score": "alto", "term": 900, "loan_type": "type9", "loan_purpose": "p1", "occupancy_type": "pr"}
+}

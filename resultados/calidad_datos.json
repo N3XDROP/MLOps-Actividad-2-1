@@ -1,0 +1,19 @@
+{
+  "filas_originales": 148670,
+  "filas_validas": 139353,
+  "filas_rechazadas": 9317,
+  "clases_originales": {
+    "1": 36639,
+    "0": 112031
+  },
+  "clases_validas": {
+    "0": 103995,
+    "1": 35358
+  },
+  "incidencias": {
+    "income: campo obligatorio o valor nulo": 9150,
+    "term: campo obligatorio o valor nulo": 41,
+    "loan_purpose: campo obligatorio o valor nulo": 134
+  },
+  "sha256_dataset": "4234b122f463ff4d563de600ade5ec347a9ab8f02cfc204535f7c0d4929bfe70"
+}
